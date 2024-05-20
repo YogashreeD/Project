@@ -24,9 +24,9 @@ function displayready(){
 			
 			// getting time by getting hour, minute, seconds 
 		currdate = a.getDate() + "-"+ a.getMonth() + "-" + a.getFullYear();
-		console.log("-->",currdate);
+		//console.log("-->",currdate);
 		currtime = a.getHours() +":" + a.getMinutes() +":"+ a.getSeconds();
-		console.log("-->",currtime);
+		//console.log("-->",currtime);
 		
 		mainhhtml = `
 			<div class="ready-outer">
@@ -45,8 +45,8 @@ function displayready(){
 		
 	});
 	document.querySelector('.ready-head-js').innerHTML=mainhhtml;
-	console.log(mainhhtml);
-	console.log(ready);
+	//console.log(mainhhtml);
+	//console.log(ready);
 }
 
 function readylist(pack){

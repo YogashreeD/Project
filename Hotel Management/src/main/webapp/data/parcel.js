@@ -35,7 +35,7 @@ export function addParcel(id,sym){
     }
     totalQuantity();
     addingtolocal();
-    console.log(parcel);
+    //console.log(parcel);
 }
 
 
@@ -51,7 +51,7 @@ export function totalQuantity(){
     else{
         displayParcel(true);
     }
-    console.log(totalquan);
+    //console.log(totalquan);
 }
 
 //local storage

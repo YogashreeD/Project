@@ -25,22 +25,22 @@ function ordermsg(){
 	let currdate='';
 	let currtime='';
 	let aftime='';
-	console.log(orderjs);
+	//console.log(orderjs);
 	orderjs.forEach((orderfood)=>{
 		
 			let a = dateandtime(orderfood.datetime);
 			
 			// getting time by getting hour, minute, seconds 
 			currdate = a.getDate() + "-"+ a.getMonth() + "-" + a.getFullYear();
-			console.log("-->",currdate);
+			//console.log("-->",currdate);
 			currtime = a.getHours() +":" + a.getMinutes() +":"+ a.getSeconds();
-			console.log("-->",currtime);
+			//console.log("-->",currtime);
 			
 			//adding delivery time to original time
 			a.setMinutes ( a.getMinutes() + 5 );
 			
 			aftime = a.getHours() +":" + a.getMinutes() +":"+ a.getSeconds();
-			console.log("-->",aftime);
+			//console.log("-->",aftime);
 			
 			//displaying date and time.
 			//document.querySelector('.order-list-js').innerHTML=htmlorder;
@@ -114,8 +114,8 @@ function movetoready(){
 		let datenow = new Date();
 		let b = dateandtime(datenow).getTime();
 		let diff = a-b;
-		console.log(a,",",b);
-		console.log(diff);
+		//console.log(a,",",b);
+		//console.log(diff);
 		
 		if(a<b){
 			ready.push(orderfood);
@@ -125,11 +125,11 @@ function movetoready(){
 		}
 		index++;
 	});
-	console.log(ready);
-	console.log(orderjs);
+	//console.log(ready);
+	//console.log(orderjs);
 	if(orderjs.length<len){
 		nullchecker();
-		console.log(len,orderjs.length);
+		//console.log(len,orderjs.length);
 	}
 }
 

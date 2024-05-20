@@ -41,12 +41,12 @@ let order = document.querySelector('.order-button');
         let ordertime = dayjs().format('HH:mm:ss');
         let datetime = new Date();
 		
-		console.log("----------------");
+		//console.log("----------------");
 		orderjs.push({
 			parcel,
 			datetime
 		});	
-		console.log(orderjs);
+		//console.log(orderjs);
 		localStorage.setItem("orderjs",JSON.stringify(orderjs));
 			
 		let personid = "abcdefg";
@@ -60,20 +60,20 @@ let order = document.querySelector('.order-button');
 		let arr = JSON.stringify(orderlist);
         let ip = document.getElementById("orderlist-js");
         ip.value=arr;
-        console.log((ip.value));
+        //console.log((ip.value));
         
         
 		let orderpack = JSON.stringify(parcel);
 		let ip2 = document.getElementById("orderlist2-js");
 		ip2.value=orderpack;
-		console.log(ip2.value);
+		//console.log(ip2.value);
 		
 		
-        console.log('order');        
+        //console.log('order');        
         let orderclasss=document.querySelector('.order-popup').classList;
         orderclasss.add('order-popup-toggle');
         deleteparcel();
-        console.log(parcel);
+        //console.log(parcel);
         totalQuantity();
         setTimeout(()=>{
             orderclasss.remove('order-popup-toggle');
