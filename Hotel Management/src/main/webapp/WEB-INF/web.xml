@@ -19,7 +19,7 @@
   
   <filter-mapping>
   	<filter-name>Cors</filter-name>
-  	<url-pattern>/hotelmenu.html</url-pattern>
+  	<url-pattern>/orderpost</url-pattern>
   </filter-mapping>
   
   <servlet>
