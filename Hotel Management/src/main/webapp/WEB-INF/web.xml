@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  
+  <servlet>
+  <servlet-name>reserve</servlet-name>
+  <servlet-class>com.room_reservation.addRoomServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>reserve</servlet-name>
+  	<url-pattern>/reserve</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>orderlist</servlet-name>
+  	<servlet-class>com.hotelMenu.orderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>orderlist</servlet-name>
+  	<url-pattern>/orderpost</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+	<display-name>Cors</display-name>
+	<filter-name>Cors</filter-name>
+	<filter-class>com.corsfilter.CorsFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Cors</filter-name>
+  	<url-pattern>/orderpost</url-pattern>
+  </filter-mapping>
+</web-app>

@@ -1,0 +1,85 @@
+.outside, .room_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outside{
+	z-index: 100;
+}
+.reserve_box{
+    height: 400px;
+    width: 430px;
+    border: solid 1px black;
+    
+    position: absolute;
+    top: 100px;
+
+}
+.room_title{
+    background-color: rgb(245, 35, 35);
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: arial;
+
+}
+form{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: arial;
+
+    display: grid;
+    grid-template-columns: 220px 100px;
+    row-gap: 10px;
+}
+
+button{
+    font-family: arial;
+    font-size: 15px;
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(245, 35, 35);
+    color: white;
+    margin-top:20px;
+    margin-left: 120px;
+    position: relative;
+}
+.submit-popup{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index:-1;
+}
+.submit-popup-toggle{
+    opacity: 1;
+    z-index: 500;
+}
+
+.popup{
+    width: 280px;
+    height: 150px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: Arial;
+    text-align: center;
+    color: green;
+    background-color: white;
+}
+.popup-title{
+    font-size: 20px;
+    font-weight: bold;  
+}
+.popup-para{
+    color: black;
+}

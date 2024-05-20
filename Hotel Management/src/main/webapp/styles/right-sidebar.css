@@ -1,0 +1,108 @@
+.heading, .total-price,
+.total-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-sidebar{
+    font-family: Roboto, Arial;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    width: 300px;
+    top: 60px;
+    bottom: 0;
+
+    border-left: 1px solid rgb(238, 238, 238);
+    opacity: 0;
+}    
+
+.right-sidebar-toggle{
+    opacity: 1;
+    z-index: 300;
+}
+
+.heading{
+    background-color: rgb(245, 35, 35);
+    color: white;
+    font-size: 25px;
+    height: 60px;
+}
+
+.date-time{
+    font-family: Roboto,Arial;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.list-title, .total-price{
+    font-weight: bold;
+}
+.total-quantity{
+    display: grid;
+    grid-template-columns: 100px 60px 50px;
+    margin-top: 5px;
+    margin-left: 30px;
+    column-gap: 5px;
+    row-gap: 8px;
+    font-size: 15px;
+}
+
+.total-quantity-title{
+    display: grid;
+    grid-template-columns: 100px 60px 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+    column-gap: 5px;
+    font-size: 17px;
+    
+}
+
+.total-price{
+    font-size: 18px;
+    margin-top: 150px;
+}
+.order-button{
+    background-color: rgb(245, 35, 35);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.order-popup{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.order-popup-toggle{
+    opacity: 1;
+    z-index: 500;
+}
+
+.popup{
+    width: 280px;
+    height: 150px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: Arial;
+    text-align: center;
+    color: green;
+    background-color: white;
+}
+.popup-title{
+    font-size: 20px;
+    font-weight: bold;  
+}

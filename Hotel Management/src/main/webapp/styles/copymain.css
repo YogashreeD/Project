@@ -1,0 +1,113 @@
+.hotel-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+@media (max-width:750px){
+    .hotel-menu{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:751px) and (min-width:949px){
+    .hotel-menu{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:950px){
+    .hotel-menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1201px){
+    .hotel-menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.menu-container{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    
+}
+.menu-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
+.menu-desc{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.menu-info{
+    margin-left: 18px;
+    background-color: lightblue;
+}
+.menu-vnv-desc{
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    column-gap: 5px;
+    padding-top: 3px;
+}
+.vnv-img{
+    height: 15px;
+}
+.vnv-tag{
+    font-size: 12px;
+    margin-top: 0;
+}
+.menu-name,.menu-price{
+    font-size: 18px;
+    font-family: Arial;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.pack-button{
+    background-color: rgb(245, 35, 35);
+    width: 100px;
+    color: white;
+    border: solid;
+    font-size: 15px;
+    font-family: Roboto, Arial;
+    padding: 5px;
+    margin-left: 60px;
+}
+
+.minus,.plus,.add-quantity{
+    background-color: rgb(245, 35, 35);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 0px;
+    border: solid;
+    font-size: 15px;
+    font-family: Roboto, Arial;
+}
+.add-quantity{
+    position: relative;
+    width: 40px;
+    margin-left: 77px;
+}
+.minus{
+    position: absolute;
+    right: 40px;
+    width: 30px;
+    border-right: 1px solid white ;
+}
+.plus{
+    position: absolute;
+    left: 40px;
+    width: 30px;
+    border-left: 1px solid white ;
+}

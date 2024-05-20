@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Menu</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/right-sidebar.css">
+    
+    </head>
+    <body class="body">
+        <div class="header">
+            <div class="left-section">
+                <button class="hamburger-menu-button"><img class="hamburger-menu" src="Images/Icon/hamburger-menu.svg"></button>
+                <img class="hotel-logo" src="Images/Icon/hotel-logo.jpg">
+            </div>
+            <div class="middle-section">
+                <input type="text" placeholder="Search" class="search">
+                <button class="search-button"><img class="search-icon" src="Images/Icon/search.svg">
+                <div class="tooltip">Search</div></button>
+            </div>
+            <div class="right-section">
+                <div class="hm-services">
+                    <a href="room_registration.html"><img class="hm-apps" src="Images/Icon/hm-apps.svg"></a>
+                    <div class="tooltip">Rooms</div>
+                </div>
+                <div class="notifications-icon">
+                    <img class="notifications" src="Images/Icon/notifications.svg">
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="current-user-img" src="Images/Customer/current-user-img.svg">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <a href="hotelmenu.html"><img src="Images/Icon/home.svg"></a>
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <a href="offers.html"><img src="Images/Icon/offer.svg"></a>
+                <div>Offers</div>
+            </div>
+            <div class="sidebar-link">
+                <a href="orders.html"><img src="Images/Icon/orders.svg"></a>
+                <div>Orders</div>
+            </div>
+            <div class="sidebar-link">
+                <a href="supply.html"><img src="Images/Icon/history.svg"></a>
+                <div>Supply</div>
+            </div>
+            <div class="sidebar-link">
+                <a href="aboutus.html"><img src="Images/Icon/about-us.svg"></a>
+                <div>About us</div>
+            </div>
+        </div>
+
+        <div class="hotel-menu js-menu-grid">
+        </div>
+
+        <div class="right-sidebar">
+
+            <div class="heading">Parcel</div>
+
+            <div class="date-time">Date:09-04-2024</div>
+
+            <div class="total-quantity-title">
+                <div class="list-title">Food</div>
+                <div class="list-title">Price</div>
+                <div class="list-title">Quantity</div>
+            </div>
+            <div class="total-quantity">
+                
+            </div>
+
+            <div class="total-price">
+                Total &#61; <div class="price"></div></div>
+
+			<form action="orderpost" method="post"> 
+				<input name="orderlist" type="hidden" id="orderlist-js" value="">
+				<input name="orderlist2" type="hidden" id="orderlist2-js" value="">
+	            <div class="total-order">
+	                <button class="order-button">Order</button>
+	            </div>
+            </form>
+            
+        </div>
+
+        <div class="order-popup">
+            <div class="popup">
+                <p class="popup-title">Congratulations&#33;</p>
+                <p class="popup-para">Your order is successfully placed and your food is in preparation</p>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+        <script type="module" src="script/menu.js"></script>
+        
+    </body>
+</html>

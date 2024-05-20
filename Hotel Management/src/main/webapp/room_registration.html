@@ -1,0 +1,50 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Reservation</title>
+
+        <link rel="stylesheet" href="room_registration.css">
+    </head>
+    <body>
+        <div class="outside">
+            <div class="reserve_box">
+                <div class="room_title">Room Reservation</div>
+                <form class="reserve-form" action="reserve" method="post">
+    
+
+                    <div><label class="name">Name</label></div>
+                    <div><input type="text" name="customername"></div>
+    
+                    <div><label>Email Id</label></div>
+                    <div><input type="text" name="customeremail"></div>
+    
+                    <div><label>Phone Number</label></div>
+                    <div><input type="text" name="customerphn"></div>
+    
+                    <div><label>How many rooms do you want&#63;</label></div>
+                    <div><input type="text" name="numofroom"></div>
+    
+                    <div><label>Enter your perspective date</label></div>
+                    <div></div>
+                    <div><label>From</label></div>
+                    <div><input type="date" name="fromdate"></div>
+                    <div><label>To</label></div>
+                    <div><input type="date" name="todate"></div>
+                    
+                    <div class="submit-button"><button>Submit</button></div>
+                    
+                </form>
+                
+            </div>
+        </div>
+        <form action="submitpopup submit-popup-toggle" method="post">
+        	<div class="submit-popup">
+	            <div class="popup">
+	                <p class="popup-title">Congratulations&#33;</p>
+	                <p class="popup-para">Your room will be available on the booked date</p>
+	            </div>
+	        </div>
+        </form>
+        
+    </body>
+</html>
