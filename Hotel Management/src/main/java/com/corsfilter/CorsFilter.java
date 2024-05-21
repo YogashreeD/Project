@@ -14,8 +14,9 @@ public class CorsFilter implements Filter{
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain fc) throws IOException, ServletException {
 		HttpServletResponse response = (HttpServletResponse) res;
 		response.addHeader("Access-Control-Allow-Origin", "*");
-		response.addHeader("Access-Control-Allow-Headers", "*");
-		response.addHeader("Access-Control-Allow-Methods","GET, POST, OPTION");
+		response.addHeader("Access-Control-Allow-Credentials", "true");
+		response.addHeader("Access-Control-Allow-Headers", " Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept, Access-Control-Allow-Methods, Access-Control-Allow-Origin, Access-Control-Allow-Credentials");
+		response.addHeader("Access-Control-Allow-Methods","OPTIONS, HEAD, GET, POST");
 		
 		System.out.println("Insidde cors");
 		
