@@ -30,7 +30,7 @@ public class orderServlet extends HttpServlet {
 		//json string maps to java object
 		ObjectMapper mapper = new ObjectMapper();
 		FoodPack fp = mapper.readValue(info, FoodPack.class);
-		//System.out.println(fp.getOrderdate());
+		System.out.println(fp.getOrderdate());
 		parcel[] p = mapper.readValue(pack, parcel[].class);	
 		for(parcel pp : p) {
 			System.out.println(pp.getId());

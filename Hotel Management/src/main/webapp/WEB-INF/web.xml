@@ -11,6 +11,16 @@
   	<url-pattern>/reserve</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>orderlist</servlet-name>
+  	<servlet-class>com.hotelMenu.orderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>orderlist</servlet-name>
+  	<url-pattern>/hotelmenu.html</url-pattern>
+  </servlet-mapping>
+  
   <filter>
 	<display-name>Cors</display-name>
 	<filter-name>Cors</filter-name>
@@ -19,18 +29,7 @@
   
   <filter-mapping>
   	<filter-name>Cors</filter-name>
-  	<url-pattern>/orderpost</url-pattern>
+  	<url-pattern>/hotelmenu.html</url-pattern>
   </filter-mapping>
-  
-  <servlet>
-  	<servlet-name>orderlist</servlet-name>
-  	<servlet-class>com.hotelMenu.orderServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>orderlist</servlet-name>
-  	<url-pattern>/orderpost</url-pattern>
-  </servlet-mapping>
-  
   
 </web-app>

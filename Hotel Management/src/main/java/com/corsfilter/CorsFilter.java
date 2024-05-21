@@ -15,7 +15,11 @@ public class CorsFilter implements Filter{
 		HttpServletResponse response = (HttpServletResponse) res;
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		response.addHeader("Access-Control-Allow-Headers", "*");
-		response.addHeader("Access-Control-Allow-Methods","GET, POST");
+		response.addHeader("Access-Control-Allow-Methods","GET, POST, OPTION");
+		
+		System.out.println("Insidde cors");
+		
 		fc.doFilter(req,res);
+		
 	}
 }
